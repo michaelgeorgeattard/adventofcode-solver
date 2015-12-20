@@ -1,0 +1,12 @@
+{
+  "name": "adventofcode-solver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "q": "^1.4.1"
+  },
+  "devDependencies": {},
+  "author": "Michael George Attard",
+  "license": "ISC"
+}
