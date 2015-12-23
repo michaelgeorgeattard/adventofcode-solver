@@ -1,13 +1,17 @@
 var dataService = require("./dataService"),
-	solver = require("./6.js");
+	solver = require("./7.js");
 
-dataService.getPuzzleInput(6)
+dataService.getPuzzleInput(7)
 	.then(function (data) {
 		if (typeof solver.parse === "undefined") {
-			console.error("No parse function defined. Aborting");
+			console.error("No parse function defined. Aborting.");
 		}
 		
 		var parsedData = solver.parse(data);
+        
+        if (!parsedData) {
+            console.error("Failed to parse puzzle data. Aborting.");
+        }
 		
 		for (var i = 1; i <= solver.solutions.length; ++i) {
 			if (typeof solver.solutions[i-1] === "function") {
