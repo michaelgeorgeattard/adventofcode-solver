@@ -1,3 +1,5 @@
+"use strict";
+
 /* global Map */
 
 exports.solutions = [solveFirst, solveSecond];
@@ -54,8 +56,9 @@ function getNumberOfVisitedHouses(parsedData, santaCount) {
 
 /**
  *	Cantor pairing function. Only unique when a,b >= 0
+ *  TODO - Extract
  **/
-function pairingFunction(a, b) {
+exports.pairingFunction = function pairingFunction(a, b) {
 	return ((a + b) * (a + b + 1) / 2) + b;
 }
 
