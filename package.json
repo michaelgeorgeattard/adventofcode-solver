@@ -4,6 +4,7 @@
   "description": "",
   "main": "app.js",
   "dependencies": {
+    "lodash": "^3.10.1",
     "q": "^1.4.1"
   },
   "devDependencies": {},
