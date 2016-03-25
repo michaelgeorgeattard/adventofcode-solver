@@ -1,7 +1,7 @@
 var dataService = require("./dataService"),
-	solver = require("./8.js");
+	solver = require("./9.js");
 
-dataService.getPuzzleInput(8)
+dataService.getPuzzleInput(9)
 	.then(function (data) {
 		if (typeof solver.parse === "undefined") {
 			console.error("No parse function defined. Aborting.");

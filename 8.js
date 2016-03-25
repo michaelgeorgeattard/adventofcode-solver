@@ -25,7 +25,7 @@ function solveFirst(parsedData) {
 }
 
 function solveSecond(parsedData) {
-    var totalEncodeStringLength = _.sum(parsedData, str => {
+    var totalEncodedStringLength = _.sum(parsedData, str => {
         var strLength = str.length;
         
         var modifiedStr = str.substring(1, str.length - 1);
@@ -47,5 +47,5 @@ function solveSecond(parsedData) {
         return str.length;
     });
     
-    return totalEncodeStringLength - totalStringLength;
+    return totalEncodedStringLength - totalStringLength;
 }
